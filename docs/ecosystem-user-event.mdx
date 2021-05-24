@@ -30,8 +30,9 @@ test('types inside textarea', () => {
 ## API
 
 Note: All userEvent methods are synchronous with one exception: when `delay`
-option used with `userEvent.type` as described below. We also discourage using `userEvent`
-inside `before/after` blocks at all, for important reasons described in
+option used with `userEvent.type` as described below. We also discourage using
+`userEvent` inside `before/after` blocks at all, for important reasons described
+in
 ["Avoid Nesting When You're Testing"](https://kentcdodds.com/blog/avoid-nesting-when-youre-testing).
 
 ### `click(element, eventInit, options)`
@@ -205,8 +206,8 @@ test('types into the input', () => {
 
 ### `upload(element, file, [{ clickInit, changeInit }])`
 
-Uploads file to an `<input>`. For uploading multiple files use `<input>` with the
-`multiple` attribute and the second `upload` argument as an array. It's also
+Uploads file to an `<input>`. For uploading multiple files use `<input>` with
+the `multiple` attribute and the second `upload` argument as an array. It's also
 possible to initialize a click or change event using a third argument.
 
 ```jsx
